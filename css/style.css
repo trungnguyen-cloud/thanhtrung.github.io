@@ -1,0 +1,26 @@
+selector {
+thuoc-tinh: gia-tri;
+}
+
+body {
+font-family: Arial; 
+background-color: rgb(234, 240, 240); /* Màu nền */
+margin: 0;
+padding: 20px;
+}
+h1 {
+color: black;
+font-size: 32px;
+text-align: center;
+}
+p {
+color: white;
+line-height: 1.8; /* Khoảng cách dòng */
+max-width: 700px;
+}
+h2 {
+    color: rgb(176, 18, 18);
+    border-bottom: 2px solid black; /* Đường viền dưới */
+    width: 200%; /* Chiều rộng */
+    height: 200%; /* Chiều cao */
+}
