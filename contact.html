@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Nguyễn Thành Trung</title>
+    <style>
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trang liên hệ</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a> | 
+            <a href="about.html">Giới thiệu</a> | 
+            <a href="contact.html">Liên hệ</a> | 
+            <a href="https://github.com/trungnguyen-cloud/thanhtrung.github.io" target="_blank" rel="noopener">GitHub</a> |
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="#" method="POST">
+
+           <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Nhập họ và tên">
+            <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="email@example.com">
+           </div>
+            <div><label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="0123456789">
+            <label for="birthdate">Ngày sinh</label>
+            <input type="date" id="birthdate" name="birthdate" required></div>
+        <label for="university">Trường đại học:</label>
+<input type="text" id="university" list="universities"
+       placeholder="Nhập tên trường">
+
+<datalist id="universities">
+    <option value="Đại học Bách khoa Hà Nội">
+    <option value="Đại học Quốc gia Hà Nội">
+    <option value="Đại học FPT">
+    <option value="Đại học Công nghiệp Hà Nội">
+</datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Nội dung liên hệ</legend>
+            <label for ="subject dropdown">Kênh</label>
+            <select id="subject dropdown" name="subject dropdown">
+                <option value="-Email-">Email</option>
+                <option value="-Phone-">Số điện thoại</option>
+                <option value="-Zalo-">Zalo</option>
+                <option value="-khác-">Khác</option>
+            </select>
+            <label for="message">Tin nhắn</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <check box>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Đồng ý </label>
+        </fieldset>
+            <div>
+                <button type="submit">Gửi</button>
+                <button type="reset">Xóa</button>
+            </div>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+         <address>
+            Thông tin liên hệ: Email của bạn (<a href="mailto:trungnguyen@email.com">trungnguyen@email.com</a>)
+            <p>hotline: 0912345678  </p>
+        </address>
+        <address>
+            <p>bản quyền © 2026 Nguyễn Thành Trung</p>
+        </address>
+        <p>© 2026 Nguyễn Thành Trung - Trường Đại học Gia Định</p>
+        <p>ngày cập nhật: 10/10/2026</p>
+    </footer>
+
+</body>
+</html>
